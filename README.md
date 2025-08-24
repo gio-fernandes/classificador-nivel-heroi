@@ -1,11 +1,11 @@
-🦸 Classificador de Heróis por Experiência (XP) ⚔️
+## 🦸 Classificador de Heróis por Experiência (XP) ⚔️
 
-# Descrição:
+Descrição:
 - Este projeto foi desenvolvido como parte de um desafio proposto pelo Felipe Aguiar na plataforma DIO, que classifica heróis com base em seu nome e quantidade de experiência (XP). 
 
 - O programa solicita ao usuário o nome do herói e sua experiência, e retorna o nível correspondente, variando de "Ferro" a "Radiante", conforme a quantidade de XP.
 
-## 🚀 Funcionalidades:
+🚀 Funcionalidades:
 - Solicita o nome e a experiência (XP) do herói via terminal.
 
 - Classifica o herói em um dos seguintes níveis com base na experiência:
@@ -20,12 +20,12 @@
 
 - Exibe uma mensagem com o nome do herói e seu nível.
 
-### 💻 Requisitos:
+💻 Requisitos:
 
 - Node.js instalado no sistema para executar o script.
 - O script utiliza o módulo nativo readline do Node.js, que não requer instalação adicional.
 
-#### ⚡ Como Executar:
+⚡ Como Executar:
 
 - Certifique-se de que o Node.js está instalado em sua máquina. Você pode baixá-lo em nodejs.org.
 - Salve o código fornecido em um arquivo com extensão .js (por exemplo: classificador.js).
@@ -38,13 +38,13 @@
 
 - O programa exibirá o nível do herói com base nos dados fornecidos.
 
-##### 📝 Exemplo de Uso:
+📝 Exemplo de Uso:
 
 Digite o nome do herói: Gandalf
 Digite a experiência (XP): 9500
 O Herói Gandalf está no nível Imortal
 
-##### 🔧 Estrutura do Código:
+🔧 Estrutura do Código:
 
 - Módulo readline: Utilizado para capturar entradas do usuário no terminal.
 - Função classificarHeroi: Recebe o nome e a experiência do herói, determina o nível com base em uma estrutura switch e retorna uma mensagem formatada.
