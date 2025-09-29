@@ -1,11 +1,19 @@
-🦸 Classificador de Heróis por Experiência (XP) ⚔️
+# Classificador de Heróis por Experiência (XP) ⚔️
 
-# Descrição:
-- Este projeto foi desenvolvido como parte de um desafio proposto pelo Felipe Aguiar na plataforma DIO, que classifica heróis com base em seu nome e quantidade de experiência (XP). 
+---
 
-- O programa solicita ao usuário o nome do herói e sua experiência, e retorna o nível correspondente, variando de "Ferro" a "Radiante", conforme a quantidade de XP.
+## Descrição:
 
-## 🚀 Funcionalidades:
+Este projeto foi desenvolvido como parte de um desafio proposto pelo Felipe Aguiar na plataforma DIO, que classifica heróis com base em seu nome e quantidade de experiência (XP). 
+
+O programa solicita ao usuário o nome do herói e sua experiência, e retorna o nível correspondente, variando de "Ferro" a "Radiante", conforme a quantidade de XP.
+
+Além da versão para terminal, o projeto foi incrementado com HTML e CSS, proporcionando uma interface moderna, interativa e responsiva, com fundo de super-heróis transparente, efeitos de foco e hover nos inputs e botões, e adaptação para smartphones, tablets e desktops.
+
+---
+
+## Funcionalidades:
+
 - Solicita o nome e a experiência (XP) do herói via terminal.
 
 - Classifica o herói em um dos seguintes níveis com base na experiência:
@@ -19,13 +27,23 @@
  -- Radiante: Acima de 10000 XP
 
 - Exibe uma mensagem com o nome do herói e seu nível.
+- Versão Web: interface moderna e responsiva com HTML e CSS.
+- Botão para classificar e botão para limpar os campos.
+- Tecla Enter permite navegar entre os campos e executar a classificação rapidamente.
 
-### 💻 Requisitos:
+---
 
-- Node.js instalado no sistema para executar o script.
-- O script utiliza o módulo nativo readline do Node.js, que não requer instalação adicional.
+## Requisitos:
 
-#### ⚡ Como Executar:
+- Node.js instalado no sistema para executar a versão em terminal.
+
+- Navegador moderno para utilizar a versão web com HTML e CSS.
+
+---
+
+## Como Executar:
+
+### Versão no Terminal:
 
 - Certifique-se de que o Node.js está instalado em sua máquina. Você pode baixá-lo em nodejs.org.
 - Salve o código fornecido em um arquivo com extensão .js (por exemplo: classificador.js).
@@ -38,17 +56,32 @@
 
 - O programa exibirá o nível do herói com base nos dados fornecidos.
 
-##### 📝 Exemplo de Uso:
+### Versão Web:
 
-Digite o nome do herói: Gandalf
+- Abra o arquivo index.html em qualquer navegador moderno.
+- Digite o nome do herói e a experiência (XP) nos campos correspondentes.
+- Pressione a tecla Enter para avançar ou clique em Classificar.
+- Clique em Limpar para reiniciar os campos.
+
+---
+
+## Exemplo de Uso:
+
+Digite o nome do herói: Batman
 Digite a experiência (XP): 9500
-O Herói Gandalf está no nível Imortal
+O Herói Batman está no nível Imortal
 
-##### 🔧 Estrutura do Código:
+---
 
-- Módulo readline: Utilizado para capturar entradas do usuário no terminal.
-- Função classificarHeroi: Recebe o nome e a experiência do herói, determina o nível com base em uma estrutura switch e retorna uma mensagem formatada.
-- Interface de entrada/saída: Configurada para ler o nome e a experiência do usuário, processar os dados e exibir o resultado.
+## Estrutura do Código:
+
+- readline (Node.js): captura entradas do usuário no terminal.
+
+- classificarHeroi: função que determina o nível do herói com base na XP.
+
+- HTML/CSS: fornece interface web moderna, responsiva e interativa.
+
+- script.js: lógica de classificação adaptada para o navegador, incluindo atalhos de teclado e manipulação de DOM.
 
 ---
 

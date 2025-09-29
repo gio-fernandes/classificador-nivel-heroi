@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🦸‍♂️ Nível do Herói</title>
+  <!-- Ligação com o CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Classificador de Nível do Herói 🦸‍♂️ </h1>
+    <p class="subtitulo">
+        Descubra o nível do seu herói inserindo o nome e a experiência (XP). 
+    </p>
+
+    <input type="text" id="nome" placeholder="Digite o nome do herói">
+    <input type="number" id="xp" placeholder="Digite a experiência (XP)">
+    
+    <button onclick="classificarHeroi()">Classificar</button>
+    <button class="btn-limpar" onclick="limparCampos()">Limpar</button>
+    
+    <div id="resultado"></div>
+  </div>
+
+  <!-- Ligação com o JS externo -->
+  <script src="script.js"></script>
+</body>
+</html>

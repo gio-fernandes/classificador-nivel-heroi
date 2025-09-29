@@ -1,0 +1,184 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo do corpo */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fundo com imagem transparente */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://i.pinimg.com/736x/85/2a/21/852a215f2cd723e3cadfa72941e6015d.jpg") no-repeat center;
+  background-size: contain;   /* mantém a proporção e cabe na tela */
+  background-position: center top; /* posiciona mais no topo */
+  background-repeat: no-repeat; /* não repete */
+  background-size: cover;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* Container principal */
+.container {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  width: 90%;
+  max-width: 400px;
+  backdrop-filter: blur(8px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Título */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f4d03f;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+/* Subtítulo */
+.subtitulo {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Formulário */
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  outline: none;
+  font-size: 1rem;
+  transition: box-shadow 0.3s;
+}
+
+/* Efeito de foco nos inputs */
+input:focus {
+  box-shadow: 0 0 12px #f4d03f;
+}
+
+/* Botões */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #f4d03f;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+/* Efeito de hover nos botões */
+button:hover {
+  transform: scale(1.05);
+  background: #ffcc00;
+}
+
+/* Botão de limpar */
+.btn-limpar {
+  margin-top: 10px;
+  background: #e74c3c; /* vermelho */
+  color: #fff;
+}
+
+/* Efeito de hover no botão de limpar */
+.btn-limpar:hover {
+  background: #ff6b5a;
+}
+
+/* Inputs e botão ocupam largura total */
+input, button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Resultado */
+#resultado {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  min-height: 30px;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Media Queries para telas pequenas (smartphones) */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .subtitulo {
+    font-size: 0.9rem;
+  }
+
+  input, button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Media Queries para tablets (entre smartphones e desktops) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 350px;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  input, button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+/* Para desktops maiores, podemos aumentar levemente */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 450px;
+    padding: 35px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+}
