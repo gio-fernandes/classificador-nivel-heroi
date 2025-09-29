@@ -79,7 +79,7 @@ Digite a experiência (XP): 9500
 
 O projeto está hospedado no GitHub Pages e pode ser acessado neste link:
 
-[Nível do Herói] (https://gio-fernandes.github.io/classificador-nivel-heroi/)
+[Nível do Herói](https://gio-fernandes.github.io/classificador-nivel-heroi/)
 
 ---
 
